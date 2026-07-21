@@ -6,6 +6,7 @@
 <title>Xsto.r8 Store</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -19,67 +20,74 @@ color:white;
 }
 
 header{
-padding:20px;
-text-align:center;
 background:#111;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 border-bottom:2px solid gold;
+position:sticky;
+top:0;
 }
 
-header h1{
-font-size:40px;
+.logo{
+font-size:30px;
 color:gold;
+font-weight:bold;
 }
 
-header p{
-color:#ccc;
-margin-top:10px;
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:18px;
 }
 
 .hero{
-padding:60px 20px;
+padding:90px 20px;
 text-align:center;
 }
 
-.hero h2{
-font-size:36px;
+.hero h1{
+font-size:55px;
 color:gold;
 margin-bottom:15px;
 }
 
 .hero p{
-font-size:20px;
-color:#ddd;
-margin-bottom:30px;
+font-size:22px;
+color:#ccc;
+margin-bottom:35px;
 }
 
 .button{
-display:inline-block;
-padding:15px 35px;
 background:gold;
 color:black;
-font-weight:bold;
-text-decoration:none;
+padding:15px 35px;
 border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+font-size:20px;
 }
 
-.products{
+.games{
+padding:40px 20px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:40px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .card{
-background:#151515;
+background:#171717;
 border:1px solid gold;
 border-radius:15px;
-padding:20px;
+padding:25px;
 text-align:center;
 }
 
-.card h3{
+.card h2{
 color:gold;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 .card p{
@@ -91,9 +99,9 @@ margin-bottom:20px;
 display:inline-block;
 background:gold;
 color:black;
-padding:10px 25px;
-text-decoration:none;
+padding:12px 25px;
 border-radius:8px;
+text-decoration:none;
 font-weight:bold;
 }
 
@@ -101,50 +109,66 @@ footer{
 padding:30px;
 text-align:center;
 color:#777;
-border-top:1px solid #333;
-margin-top:40px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
-<h1>Xsto.r8</h1>
-<p>Official Gaming Store</p>
+
+<div class="logo">
+Xsto.r8
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Games</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
 </header>
 
 <section class="hero">
-<h2>Premium Game Accounts</h2>
-<p>Fast Delivery • Trusted • Best Prices</p>
-<a href="#" class="button">Shop Now</a>
+
+<h1>Premium Game Accounts</h1>
+
+<p>Fast Delivery • Safe • Trusted</p>
+
+<a href="#games" class="button">
+Browse Games
+</a>
+
 </section>
 
-<section class="products">
+<section class="games" id="games">
 
 <div class="card">
-<h3>8 Ball Pool</h3>
+<h2>🎱 8 Ball Pool</h2>
 <p>Premium Accounts</p>
-<a href="#" class="buy">Buy</a>
+<a href="#" class="buy">Buy Now</a>
 </div>
 
 <div class="card">
-<h3>Brawl Stars</h3>
+<h2>⭐ Brawl Stars</h2>
 <p>High Value Accounts</p>
-<a href="#" class="buy">Buy</a>
+<a href="#" class="buy">Buy Now</a>
 </div>
 
 <div class="card">
-<h3>Coming Soon</h3>
-<p>More Games</p>
+<h2>🎮 More Games</h2>
+<p>Coming Soon</p>
 <a href="#" class="buy">Soon</a>
 </div>
 
 </section>
 
 <footer>
+
 © 2026 Xsto.r8 Store
+
 </footer>
 
 </body>
